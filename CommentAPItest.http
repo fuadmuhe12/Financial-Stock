@@ -1,0 +1,25 @@
+@api_HostAddress = http://localhost:5143/api/comment
+
+GET {{api_HostAddress}}
+###
+GET http://localhost:5143/api/comment/3
+###
+PUT  http://localhost:5143/api/comment/3
+Content-Type: application/json
+
+{
+    "title": "the world of stock",
+    "content": "recelty the stock market is very good"
+}
+###
+
+POST http://localhost:5143/api/comment/2
+Content-Type: application/json
+
+{
+  "title" : "about the stock",
+  "content" : "the current stock is very good",
+}
+
+###
+DELETE http://localhost:5143/api/comment/2

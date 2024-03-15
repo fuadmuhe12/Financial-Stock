@@ -1,0 +1,32 @@
+@api_HostAddress = http://localhost:5143/api/stock
+
+GET {{api_HostAddress}}
+###
+GET http://localhost:5143/api/stock/5
+###
+PUT  http://localhost:5143/api/stock/64
+Content-Type: application/json
+{
+    "symbol": "okdfdf",
+    "companyName": "Tesla PLC",
+    "purchase": 45.45,
+    "lastDiv": 32,
+    "industry": "Technology",
+    "marketCap": 98237239
+}
+###
+
+POST {{api_HostAddress}}
+Content-Type: application/json
+
+{
+    "symbol": "SAMSUNG",
+    "companyName": "Samsung PLC",
+    "purchase":25.3,
+    "lastDiv": 32,
+    "industry": "Technology",
+    "marketCap": 8393442
+}
+
+###
+DELETE http://localhost:5143/api/stock/6
